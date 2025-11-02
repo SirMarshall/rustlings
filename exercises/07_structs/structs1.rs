@@ -1,9 +1,14 @@
 struct ColorRegularStruct {
     // TODO: Add the fields that the test `regular_structs` expects.
     // What types should the fields have? What are the minimum and maximum values for RGB colors?
+    // r,g,b contains 0-255 inclusive, so...
+    red: i32,
+    green: i32,
+    blue: i32,
 }
 
-struct ColorTupleStruct(/* TODO: Add the fields that the test `tuple_structs` expects */);
+struct ColorTupleStruct(/* TODO: Add the fields that the test `tuple_structs` expects */
+    i32[œ]);
 
 #[derive(Debug)]
 struct UnitStruct;
